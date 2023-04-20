@@ -1,0 +1,33 @@
+:root {
+  --blue: #004394;
+  --indigo: #6610f2;
+  --purple: #613d7c;
+  --pink: #e83e8c;
+  --red: #b81414;
+  --orange: #f0ad4e;
+  --yellow: #e66815;
+  --green: #369c14;
+  --teal: #20c997;
+  --cyan: #8348a1;
+  --white: #fff;
+  --gray: #868e96;
+  --gray-dark: #373a3c;
+  --primary: #004394;
+  --secondary: #ced4da;
+  --success: #369c14;
+  --info: #8348a1;
+  --warning: #e66815;
+  --danger: #b81414;
+  --light: #f8f9fa;
+  --dark: #373a3c;
+}
+
+button {
+  background-color: var(--red);
+}
+
+.btn-primary {
+  color: #fff;
+  background-color: var(--red);
+  border-color: #004394;
+}
