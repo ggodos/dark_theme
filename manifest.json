@@ -13,14 +13,14 @@
     "default_title": "Chrome Addon v3 Starter",
     "default_popup": "popup/popup.html"
   },
-  "permissions": ["tabs", "activeTab", "webRequest"],
+  "permissions": ["scripting", "tabs", "activeTab", "webRequest", "storage", "webNavigation"],
   "host_permissions": ["*://*/*"],
   "background": {
     "service_worker": "service-worker.js"
   },
   "content_scripts": [
     {
-      "js": ["./themes/edu-susu.js"],
+      "js": ["themes/edu-susu.js"],
       "matches": ["*://edu.susu.ru/*"]
     }
   ],

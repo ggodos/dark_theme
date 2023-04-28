@@ -1,33 +1,193 @@
 :root {
-  --blue: #004394;
-  --indigo: #6610f2;
-  --purple: #613d7c;
-  --pink: #e83e8c;
-  --red: #b81414;
-  --orange: #f0ad4e;
-  --yellow: #e66815;
-  --green: #369c14;
-  --teal: #20c997;
-  --cyan: #8348a1;
-  --white: #fff;
-  --gray: #868e96;
-  --gray-dark: #373a3c;
-  --primary: #004394;
-  --secondary: #ced4da;
-  --success: #369c14;
-  --info: #8348a1;
-  --warning: #e66815;
-  --danger: #b81414;
-  --light: #f8f9fa;
-  --dark: #373a3c;
+  --background: #121212 !important;
+  --surface: #1e1e1e !important;
+  --light-surface: #232323 !important;
+  --lightest-surface: #2c2c2c !important;
+  --primary: #bb86fc !important;
+  --primary-hover: #9c63e1 !important;
+  --primary-pressed: #7339ba !important;
+  --primary-focus: #4f0f9e !important;
+  --primary-variant: #3700b3 !important;
+  --secondary: #03dac6 !important;
+  --on-primary: #000 !important;
+  --on-secondary: #000 !important;
+  --error: #cf6679 !important;
+  --on-error: #000 !important;
+  --on-surface: #ddd !important;
+  --on-background: #ddd !important;
+
+  --light-gray: #c1c1c1 !important;
 }
 
-button {
-  background-color: var(--red);
+#page {
+  background-color: var(--background) !important;
+  color: var(--on-background) !important;
+}
+
+#region-main-box {
+  background-color: var(--background) !important;
+  color: var(--on-background) !important;
+}
+
+.btn-submit {
+  background-color: var(--lightest-surface) !important;
+  color: var(--on-surface) !important;
+}
+
+.card,
+#region-main {
+  background-color: var(--surface) !important;
+  color: var(--on-surface) !important;
 }
 
 .btn-primary {
-  color: #fff;
-  background-color: var(--red);
-  border-color: #004394;
+  color: var(--on-primary) !important;
+  background-color: var(--primary) !important;
+  border-color: var(--on-primary) !important;
+}
+
+.btn-primary:hover {
+  color: var(--on-primary) !important;
+  background-color: var(--primary-hover) !important;
+  border-color: var(--light-gray) !important;
+}
+
+.btn-primary:not(:disabled):not(.disabled):active {
+  color: var(--on-primary) !important;
+  background-color: var(--primary-pressed) !important;
+  border-color: var(--light-gray) !important;
+  /* box-shadow: none !important; */
+  -webkit-box-shadow: inset 0px 0px 5px #c1c1c1 !important;
+  -moz-box-shadow: inset 0px 0px 5px #c1c1c1 !important;
+  box-shadow: inset 0px 0px 5px #c1c1c1 !important;
+  outline: none !important;
+}
+
+.btn-primary:focus,
+.btn-primary:focus-visible {
+  color: var(--on-primary) !important;
+  background-color: var(--primary-focus) !important;
+  border-color: var(--primary) !important;
+  box-shadow: none !important;
+  outline: none !important;
+}
+
+.btn-secondary {
+  background-color: var(--primary) !important;
+  color: var(--on-primary) !important;
+  border-color: var(--light-gray) !important;
+}
+
+a,
+.instancename {
+  color: var(--primary) !important;
+}
+
+a:hover {
+  color: var(--primary-hover) !important;
+}
+
+.alert.alert-info {
+  background-color: var(--light-surface) !important;
+  color: var(--on-background) !important;
+}
+
+.form-group,
+.form-control {
+  background-color: var(--light-surface) !important;
+  border-color: var(--light-gray) !important;
+  color: var(--on-surface) !important;
+}
+
+.form-group:focus:active,
+form-control:focus:active {
+  border: none !important;
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+.form-control:focus {
+  background-color: var(--lightest-surface) !important;
+  border-color: var(--primary) !important;
+  color: var(--on-surface) !important;
+  box-shadow: none !important;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  background-color: var(--lightest-surface) !important;
+  border-color: var(--primary) !important;
+  color: var(--on-surface) !important;
+  box-shadow: none !important;
+  -webkit-box-shadown: none !important;
+}
+[type=checkbox] {
+  appearance: inherit !important;
+  height: 12px !important;
+  width: 12px !important;
+  border: 1px solid gray !important;
+  display: inline-block !important;
+  position: relative !important;
+  background-color:#FFF !important;
+  border-radius:2px !important;
+  padding:3px !important;
+}
+[type=checkbox]:checked:before { /* ставим иконку, когда чекбокс включен  */
+  content: '\2714' !important;
+  position: absolute !important;
+  top: 5px !important;
+  left: 0 !important;
+  font-size:12px !important;
+  font-weight: bolder !important;
+  color: green !important;
+  transition: none !important;
+  line-height: 0;
+}
+
+#page-footer,
+.footnote {
+  display: none !important;
+}
+.calendar_event_course {
+  background-color: var(--lightest-surface) !important;
+}
+
+.active_tree_node {
+  border-color: var(--lightest-surface) !important;
+}
+
+#nav-drawer {
+  background-color: var(--background) !important;
+}
+
+.bg-pulse-grey {
+  background-color: var(--background) !important;
+}
+
+.alert.alert-danger {
+  background-color: var(--error) !important;
+  color: var(--on-error) !important;
+}
+.dropdown-menu.show {
+  color: var(--surface) !important;
+  background-color: var(--on-surface) !important;
+}
+
+.icon {
+  color: var(--primary) !important;
+}
+
+.li-group,
+.list-group-item,
+.course-listitem {
+  background-color: var(--light-surface) !important;
+  color: var(--on-surface) !important;
+}
+
+.fixed-top.navbar.navbar-light.bg-dark.navbar-expand.moodle-has-zindex,
+.navbar-brand {
+  background-color: var(--surface) !important;
+  color: var(--on-surface) !important;
 }
