@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
-  "name": "Chrome Extension v3 Starter",
-  "description": "A minimal example of a chrome extension using manifest v3",
+  "name": "Тёмные темы",
+  "description": "Ну тёмные темы",
   "version": "0.0.1",
   "icons": {
     "16": "logo/logo-16.png",
@@ -13,7 +13,14 @@
     "default_title": "Chrome Addon v3 Starter",
     "default_popup": "popup/popup.html"
   },
-  "permissions": ["scripting", "tabs", "activeTab", "webRequest", "storage", "webNavigation"],
+  "permissions": [
+    "scripting",
+    "tabs",
+    "activeTab",
+    "webRequest",
+    "storage",
+    "webNavigation"
+  ],
   "host_permissions": ["*://*/*"],
   "background": {
     "service_worker": "service-worker.js"
