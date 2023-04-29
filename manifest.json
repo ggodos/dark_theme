@@ -18,12 +18,6 @@
   "background": {
     "service_worker": "service-worker.js"
   },
-  "content_scripts": [
-    {
-      "js": ["themes/edu-susu.js"],
-      "matches": ["*://edu.susu.ru/*"]
-    }
-  ],
   "web_accessible_resources": [
     { "matches": ["*://edu.susu.ru/*"], "resources": ["styles/edu-susu.css"] }
   ]

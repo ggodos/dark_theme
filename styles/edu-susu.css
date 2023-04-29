@@ -1,68 +1,239 @@
 :root {
-  --background: #121212 !important;
-  --surface: #1e1e1e !important;
-  --light-surface: #232323 !important;
-  --lightest-surface: #2c2c2c !important;
-  --primary: #bb86fc !important;
-  --primary-hover: #9c63e1 !important;
-  --primary-pressed: #7339ba !important;
-  --primary-focus: #4f0f9e !important;
-  --primary-variant: #3700b3 !important;
-  --secondary: #03dac6 !important;
-  --on-primary: #000 !important;
-  --on-secondary: #000 !important;
-  --error: #cf6679 !important;
-  --on-error: #000 !important;
+  --blue-100: #2867bc !important;
+  --blue-200: #245ba6 !important;
+  --blue-300: #1f4f90 !important;
+  --blue-400: #1a4379 !important;
+  --blue-500: #153763 !important;
+  --blue-600: #112b4d !important;
+  --blue-650: #102747 !important;
+  --blue-700: #0c1e37 !important;
+  --blue-800: #071221 !important;
+  --blue-900: #02060b !important;
+
+  --purple-100: #bb86fc !important;
+  --purple-200: #ae79f9 !important;
+  --purple-300: #a16cf6 !important;
+  --purple-400: #945ff3 !important;
+  --purple-500: #8752f0 !important;
+  --purple-600: #7a45ed !important;
+  --purple-700: #6d38ea !important;
+  --purple-800: #602be7 !important;
+  --purple-900: #531ee4 !important;
+
+  --blue-pallete: #2c74b3 #205295 #144272 #0a2647;
+
+  --background: var(--blue-800) !important;
+  --surface: var(--blue-700) !important;
+  --light-surface: var(--blue-650) !important;
+  --lightest-surface: var(--blue-600) !important;
+
   --on-surface: #ddd !important;
+  --on-surface-darker: #c1c1c1 !important;
+  --on-surface-darkest: #a1a1a1 !important;
+
+  --primary: var(--purple-200) !important;
+  --primary-hover: var(--purple-400) !important;
+  --primary-pressed: var(--purple-500) !important;
+  --primary-focus: var(--purple-500) !important;
+  --on-primary: #02060b !important;
+
+  --error: #cf6679 !important;
+  --on-error: #02060b !important;
   --on-background: #ddd !important;
 
   --light-gray: #c1c1c1 !important;
+
+  --alert: #b3443e !important;
+  --alert-hover: #ef5350 !important;
+  --alert-pressed: #e53935 !important;
+  --on-alert: #02060b !important;
+
+  --error: #b00020 !important;
+  --error-hover: #c51162 !important;
+  --error-pressed: #d81b60 !important;
+  --on-error: #02060b !important;
+
+  --info: var(--blue-400) !important;
+  --info-hover: var(--blue-500) !important;
+  --info-pressed: var(--blue-600) !important;
+  --on-info: #ddd !important;
 }
 
-#page {
+/* blue
+#2C74B3
+#205295
+#144272
+#0A2647
+
+
+#2867bc
+#245ba6
+#1f4f90
+#1a4379
+#153763
+#112b4d
+#0c1e37
+#071221
+#02060b
+*/
+
+/* БАЗА */
+#page,
+#region-main-box,
+#region-main,
+#page-wrapper {
   background-color: var(--background) !important;
   color: var(--on-background) !important;
-}
-
-#region-main-box {
-  background-color: var(--background) !important;
-  color: var(--on-background) !important;
-}
-
-.btn-submit {
-  background-color: var(--lightest-surface) !important;
-  color: var(--on-surface) !important;
 }
 
 .card,
-#region-main {
+.section {
   background-color: var(--surface) !important;
   color: var(--on-surface) !important;
 }
 
-.btn-primary {
-  color: var(--on-primary) !important;
+.ul.topics {
+  border-bottom: 1px solid var(--light-surface) !important;
+}
+
+.generaltable {
+  color: var(--on-surface) !important;
+}
+
+table > thead > tr > th,
+table > tbody > tr > td {
+  background-color: var(--light-surface) !important;
+  color: var(--on-surface) !important;
+}
+table > tbody > tr:nth-child(2n) > td {
+  background-color: var(--surface) !important;
+}
+table > tbody > tr > td[colspan="4"],
+table > thead > tr > th,
+table > tbody > tr > th {
+  background-color: var(--surface) !important;
+}
+
+.instancename {
+  color: var(--on-surface) !important;
+}
+
+.closebutton {
+  color: var(--primary) !important;
+}
+
+.fp-pathbar {
+  background-color: var(--surface) !important;
+  color: var(--on-surface) !important;
+}
+
+.fp-filename-icon,
+.ygtvcell.ygtvhtml.ygtvcontent {
+  background-color: var(--surface) !important;
+}
+
+.filemanager-container .dndupload-target {
+  background: var(--surface) !important;
+  background-color: var(--light-surface) !important;
+  color: var(--on-surface) !important;
+}
+
+select {
+  background-color: var(--surface) !important;
+  color: var(--on-surface) !important;
+}
+
+.moodle-dialogue-wrap {
+  background-color: var(--surface) !important;
+  color: var(--on-surface) !important;
+}
+.moodle-dialogue-wrap > div {
+  background-color: var(--light-surface) !important;
+  color: var(--on-surface) !important;
+}
+
+img {
+  background-color: var(--surface) !important;
+}
+
+.instancename:hover,
+.activity.hasinfo:hover {
+  background-color: var(--light-surface);
+  color: var(--primary) !important;
+}
+
+.availabilityinfo:hover {
+  background-color: var(--light-surface);
+  color: var(--on-surface) !important;
+}
+
+.aalink:hover > .instancename {
+  color: var(--primary) !important;
+}
+
+.activityinstance > a:focus {
+  background-color: var(--light-surface) !important;
+  box-shadow: 0 -0.2rem var(--light-surface), 0 0.2rem var(--surface) !important;
+}
+
+#goto-top-link > a {
+  background-color: var(--light-surface) !important;
+  color: var(--primary) !important;
+  border-color: var(--primary);
+}
+
+/* ссылки */
+a {
+  color: var(--primary) !important;
+}
+
+a:hover {
+  color: var(--primary-hover) !important;
+}
+
+a.coursename,
+.arrow,
+.date > a,
+.link > a,
+.event-name {
+  color: var(--on-surface-darker) !important;
+}
+
+a[style] {
+  background-color: var(--surface) !important;
+}
+
+.event > a {
+  color: var(--on-surface) !important;
+}
+
+.current > a {
+  color: var(--on-surface) !important;
+}
+
+/* кнопки */
+.fp-upload-btn.btn-primary.btn {
   background-color: var(--primary) !important;
-  border-color: var(--on-primary) !important;
+  color: var(--on-primary) !important;
+  border-color: var(--primary) !important;
 }
-
+/* главная кнопка */
+.btn.btn-primary {
+  background-color: var(--primary) !important;
+  color: var(--on-primary) !important;
+  border-color: var(--primary) !important;
+}
 .btn-primary:hover {
-  color: var(--on-primary) !important;
   background-color: var(--primary-hover) !important;
-  border-color: var(--light-gray) !important;
 }
-
 .btn-primary:not(:disabled):not(.disabled):active {
-  color: var(--on-primary) !important;
   background-color: var(--primary-pressed) !important;
-  border-color: var(--light-gray) !important;
-  /* box-shadow: none !important; */
+  border-color: var(--primary-pressed) !important;
   -webkit-box-shadow: inset 0px 0px 5px #c1c1c1 !important;
   -moz-box-shadow: inset 0px 0px 5px #c1c1c1 !important;
   box-shadow: inset 0px 0px 5px #c1c1c1 !important;
   outline: none !important;
 }
-
 .btn-primary:focus,
 .btn-primary:focus-visible {
   color: var(--on-primary) !important;
@@ -71,123 +242,212 @@
   box-shadow: none !important;
   outline: none !important;
 }
+/* submit */
+.btn-submit {
+  background-color: var(--light-surface) !important;
+  color: var(--on-surface) !important;
+}
+/* secondary */
+.btn,
+.btn.btn-secondary {
+  background-color: var(--surface) !important;
+  color: var(--on-surface) !important;
+  border: 1px solid var(--light-gray) !important;
+}
 
-.btn-secondary {
-  background-color: var(--primary) !important;
-  color: var(--on-primary) !important;
+.btn {
+  border-color: none !important;
+}
+
+.btn:hover {
+  background-color: var(--light-surface) !important;
+  color: var(--on-surface) !important;
   border-color: var(--light-gray) !important;
 }
 
-a,
-.instancename {
-  color: var(--primary) !important;
-}
-
-a:hover {
-  color: var(--primary-hover) !important;
-}
-
-.alert.alert-info {
-  background-color: var(--light-surface) !important;
-  color: var(--on-background) !important;
-}
-
-.form-group,
-.form-control {
-  background-color: var(--light-surface) !important;
-  border-color: var(--light-gray) !important;
+/* navbar */
+.navbar.bg-dark {
+  background-color: var(--surface) !important;
   color: var(--on-surface) !important;
 }
-
-.form-group:focus:active,
-form-control:focus:active {
-  border: none !important;
-  outline: none !important;
-  box-shadow: none !important;
-}
-
-.form-control:focus {
-  background-color: var(--lightest-surface) !important;
-  border-color: var(--primary) !important;
-  color: var(--on-surface) !important;
-  box-shadow: none !important;
-}
-
-input:-webkit-autofill,
-input:-webkit-autofill:hover,
-input:-webkit-autofill:focus,
-input:-webkit-autofill:active {
-  background-color: var(--lightest-surface) !important;
-  border-color: var(--primary) !important;
-  color: var(--on-surface) !important;
-  box-shadow: none !important;
-  -webkit-box-shadown: none !important;
-}
-[type=checkbox] {
-  appearance: inherit !important;
-  height: 12px !important;
-  width: 12px !important;
-  border: 1px solid gray !important;
-  display: inline-block !important;
-  position: relative !important;
-  background-color:#FFF !important;
-  border-radius:2px !important;
-  padding:3px !important;
-}
-[type=checkbox]:checked:before { /* ставим иконку, когда чекбокс включен  */
-  content: '\2714' !important;
-  position: absolute !important;
-  top: 5px !important;
-  left: 0 !important;
-  font-size:12px !important;
-  font-weight: bolder !important;
-  color: green !important;
-  transition: none !important;
-  line-height: 0;
-}
-
-#page-footer,
-.footnote {
-  display: none !important;
-}
-.calendar_event_course {
-  background-color: var(--lightest-surface) !important;
-}
-
-.active_tree_node {
-  border-color: var(--lightest-surface) !important;
-}
-
-#nav-drawer {
-  background-color: var(--background) !important;
-}
-
-.bg-pulse-grey {
-  background-color: var(--background) !important;
-}
-
-.alert.alert-danger {
-  background-color: var(--error) !important;
-  color: var(--on-error) !important;
-}
-.dropdown-menu.show {
-  color: var(--surface) !important;
-  background-color: var(--on-surface) !important;
-}
-
-.icon {
-  color: var(--primary) !important;
-}
-
-.li-group,
-.list-group-item,
-.course-listitem {
-  background-color: var(--light-surface) !important;
-  color: var(--on-surface) !important;
-}
-
-.fixed-top.navbar.navbar-light.bg-dark.navbar-expand.moodle-has-zindex,
 .navbar-brand {
+  color: var(--on-surface) !important;
+  background-color: var(--surface) !important;
+}
+
+.nav-link.active {
+  background-color: var(--surface) !important;
+  color: var(--on-surface) !important;
+}
+
+/* nav-drawer */
+#nav-drawer {
+  background-color: var(--surface) !important;
+  color: var(--on-surface) !important;
+}
+[data-region="drawer-toggle"],
+[data-region="drawer-toggle"] > button {
+  background-color: var(--surface) !important;
+  color: var(--on-surface) !important;
+  border-color: var(--light-surface) !important;
+}
+a.bg-gray:hover,
+a.bg-gray:focus,
+[data-region="drawer-toggle"] > button.bg-gray:hover,
+[data-region="drawer-toggle"] > button.bg-gray:focus,
+[data-region="drawer-toggle"] > button.bg-gray:focus {
+  background-color: var(--surface) !important;
+  color: var(--on-surface) !important;
+  border-color: var(--light-surface) !important;
+}
+/* button.bg-gray:focus */
+/* footer */
+#page-footer,
+.footnote.bg-dark {
+  background-color: var(--surface) !important;
+  color: var(--on-surface) !important;
+}
+.footnote {
+  border-top: 1px solid var(--light-gray) !important;
+}
+
+/* alert */
+.alert {
+  background-color: var(--alert) !important;
+  color: var(--on-alert) !important;
+}
+
+.pagination > li > a {
+  background-color: var(--light-surface) !important;
+  color: var(--primary) !important;
+  border-color: var(--light-gray) !important;
+}
+
+/* list */
+.list-group-item {
+  background-color: var(--light-surface) !important;
+  color: var(--on-surface) !important;
+}
+.list-group-item.active {
+  border-color: var(--primary) !important;
+  margin-bottom: 1px;
+}
+
+.block_rss_client .list li {
+  border-top: 1px solid var(--light-gray) !important;
+}
+
+/* Загрузочная па2 */
+/* элементы курса */
+.bg-pulse-grey {
+  background-color: var(--surface) !important;
+  color: var(--on-surface) !important;
+}
+
+/* календарь calendar */
+.day.hasevent.calendar_event_course {
+  background-color: var(--info-hover) !important;
+}
+.day.hasevent.calendar_event_course.weekend {
+  background-color: var(--info-pressed) !important;
+}
+
+.day.hasevent.calendar_event_course > a {
+  color: var(--on-info) !important;
+}
+.day.hasevent.calendar_event_course.today {
+  background-color: var(--info) !important;
+}
+.day.hasevent.calendar_event_course.today > a {
+  color: var(--on-info) !important;
+}
+
+/* dropdown */
+.dropdown-menu {
+  background-color: var(--light-surface) !important;
+  color: var(--on-surface) !important;
+}
+.dropdown-item,
+.dropdown-toggle {
+  color: var(--on-surface) !important;
+}
+.dropdown-item:hover {
+  background-color: var(--surface) !important;
+  border-color: var(--light-surface) !important;
+}
+
+.custom-select {
+  background-color: var(--light-surface) !important;
+  color: var(--on-surface) !important;
+}
+
+#intro {
+  background-color: var(--surface) !important;
+  color: var(--on-surface) !important;
+}
+
+.message-app,
+.popover-region-container {
+  background-color: var(--surface) !important;
+  color: var(--on-surface) !important;
+}
+
+.popover-region-footer-container {
+  background-color: var(--light-surface) !important;
+  color: var(--on-surface) !important;
+}
+
+.overlay-icon-container {
+  background-color: var(--surface) !important;
+  color: var(--on-surface) !important;
+  opacity: 0.8;
+}
+
+.message-app,
+.container-fluid,
+textarea[data-region="send-message-txt"] {
+  background-color: var(--surface) !important;
+  color: var(--on-surface) !important;
+}
+
+.message,
+.header-container > div,
+[data-region="content-messages-footer-container"],
+.d-flex.flex-column.p-2.bg-white.rounded.mb-2 {
+  background-color: var(--light-surface) !important;
+  color: var(--on-surface) !important;
+}
+
+::-webkit-scrollbar,
+::-webkit-scrollbar-track {
+  background-color: var(--lightest-surface) !important;
+  color: var(--on-surface) !important;
+}
+::-webkit-scrollbar-thumb {
+  background-color: var(--primary-hover) !important;
+  color: var(--on-surface) !important;
+}
+::-webkit-scrollbar-thumb:hover {
+  background-color: var(--primary-pressed) !important;
+  color: var(--on-surface) !important;
+}
+
+.bg-white,
+.mx-auto.bg-white,
+.bg-pulse-grey,
+.px-2.pb-2.pt-0.bg-light.h-100 {
+  background-color: var(--surface) !important;
+  color: var(--on-surface) !important;
+}
+
+input.form-control {
+  background-color: var(--light-surface) !important;
+  color: var(--on-surface) !important;
+  border-color: var(--light-gray) !important;
+  margin-right: 1px;
+}
+
+#modal-content {
   background-color: var(--surface) !important;
   color: var(--on-surface) !important;
 }
