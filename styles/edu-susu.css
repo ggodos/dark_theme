@@ -158,8 +158,7 @@ img {
 
 .instancename:hover,
 .activity.hasinfo:hover {
-  background-color: var(--light-surface);
-  color: var(--primary) !important;
+  background-color: var(--light-surface) !important;
 }
 
 .availabilityinfo:hover {
