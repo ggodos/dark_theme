@@ -278,6 +278,18 @@ a[style] {
   color: var(--on-surface) !important;
 }
 
+.qnbutton {
+  border-color: var(--lightest-surface) !important;
+}
+
+.thispageholder {
+  border-color: var(--surface) !important;
+}
+
+.trafficlight {
+  background-color: var(--surface) !important;
+}
+
 .editor_atto,
 .editor_atto_toolbar,
 .editor_atto_content_wrap,
