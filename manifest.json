@@ -26,6 +26,6 @@
     "service_worker": "service-worker.js"
   },
   "web_accessible_resources": [
-    { "matches": ["*://edu.susu.ru/*"], "resources": ["styles/edu-susu.css"] }
+    { "matches": ["*://edu.susu.ru/*"], "resources": ["styles/edu-susu.*.css"] }
   ]
 }
