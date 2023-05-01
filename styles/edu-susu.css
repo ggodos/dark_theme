@@ -264,6 +264,10 @@ a[style] {
   border-color: var(--light-gray) !important;
 }
 
+.btn-link {
+  border: none !important;
+}
+
 /* navbar */
 .navbar.bg-dark {
   background-color: var(--surface) !important;
