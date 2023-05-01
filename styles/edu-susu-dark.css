@@ -488,3 +488,7 @@ input.form-control {
   background-color: var(--surface) !important;
   color: var(--on-surface) !important;
 }
+
+.course-content > ul.topics > li.section.main {
+	border-bottom: 1px solid var(--on-surface) !important;
+}
