@@ -489,3 +489,17 @@ input.form-control {
   background-color: var(--surface) !important;
   color: var(--on-surface) !important;
 }
+
+i > p[style], p > i[style] {
+	color  background-color: var(--surface) !important;
+	color: var(--on-surface) !important;
+}
+
+li::marker {
+	color  background-color: var(--surface) !important;
+	color: var(--on-surface) !important;
+}
+
+tr:hover > th {
+	color: var(--primary) !important;
+}
