@@ -492,3 +492,62 @@ input.form-control {
 .course-content > ul.topics > li.section.main {
 	border-bottom: 1px solid var(--on-surface) !important;
 }
+
+.section > li.activity.hasinfo {
+  border-bottom: 1px solid var(--gray-650) !important;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.nav-tabs .nav-link.active, .nav-tabs .nav-item.show .nav-link  {
+    color: #495057;
+    background-color: transparent !important;
+    border-color: var(--gray-900) var(--gray-900) var(--gray-200) !important;
+}
+
+.path-mod-attendance .attbtn {
+  border: 1px solid var(--gray-650) !important;
+  border-radius: 5px;
+  margin-left: 2px;
+  margin-right: 2px;
+  padding: 5px;
+  display: inline-block;
+}
+
+.generaltable th, .generaltable td {
+  padding: .75rem;
+  vertical-align: top;
+  border-top: 1px solid var(--gray-600) !important;
+}
+
+.generaltable thead th {
+  vertical-align: bottom;
+  border-bottom: 2px solid var(--gray-600) !important;
+}
+
+.nav-tabs {
+  border-bottom: 1px solid var(--gray-600) !important;
+}
+
+.course-content ul.topics li.section.main, .course-content ul.weeks li.section.main, .course-content ul.periods li.section.main {
+  border: none;
+  border-bottom: 1px solid var(--gray-600) !important;
+  padding-top: 3rem;
+  padding-bottom: 2rem;
+  margin: 0;
+}
+
+#intro {
+  background-color: #f8f9fa;
+  margin-bottom: 1em;
+  border-left: 3px solid var(--gray-500) !important;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.path-mod div.activity-information {
+  border-bottom: 1px solid var(--gray-800) !important;
+  padding-top: .5rem;
+  padding-bottom: 1rem;
+  margin-bottom: .5rem;
+}
