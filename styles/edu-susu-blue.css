@@ -491,15 +491,24 @@ input.form-control {
 }
 
 i > p[style], p > i[style] {
-	color  background-color: var(--surface) !important;
+	background-color: var(--surface) !important;
 	color: var(--on-surface) !important;
 }
 
 li::marker {
-	color  background-color: var(--surface) !important;
+	background-color: var(--surface) !important;
 	color: var(--on-surface) !important;
 }
 
 tr:hover > th {
 	color: var(--primary) !important;
+}
+
+.fp-iconview .fp-filename-field .fp-filename {
+	background-color: var(--surface) !important;
+}
+
+.que.essay .qtype_essay_response.readonly {
+	background-color: var(--light-surface) !important;
+	color: var(--on-surface) !important;
 }
