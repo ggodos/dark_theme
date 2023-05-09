@@ -400,6 +400,14 @@ a.bg-gray:focus,
   color: var(--on-info) !important;
 }
 
+.box.card-header.clearfix.calendar_event_course {
+	background-color: var(--light-surface);
+}
+
+.path-calendar .maincalendar .calendar_event_course {
+	border-color: var(--light-surface);
+}
+
 /* dropdown */
 .dropdown-menu {
   background-color: var(--light-surface) !important;
