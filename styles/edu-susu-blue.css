@@ -19,6 +19,8 @@
   --purple-700: #6d38ea !important;
   --purple-800: #602be7 !important;
   --purple-900: #531ee4 !important;
+  
+
 
   --blue-pallete: #2c74b3 #205295 #144272 #0a2647;
 
@@ -30,6 +32,8 @@
   --on-surface: #ddd !important;
   --on-surface-darker: #c1c1c1 !important;
   --on-surface-darkest: #a1a1a1 !important;
+  
+   --surface-on-blend: #586373 !important;
 
   --primary: var(--purple-200) !important;
   --primary-hover: var(--purple-400) !important;
@@ -129,7 +133,7 @@ table > tbody > tr > th {
 
 .fp-filename-icon,
 .ygtvcell.ygtvhtml.ygtvcontent {
-  background-color: var(--surface) !important;
+  background-color: var(--light-surface) !important;
 }
 
 .filemanager-container .dndupload-target {
@@ -519,4 +523,17 @@ tr:hover > th {
 .que.essay .qtype_essay_response.readonly {
 	background-color: var(--light-surface) !important;
 	color: var(--on-surface) !important;
+}
+
+.course-content ul.topics li.section.main {
+	border-bottom: 1px solid var(--on-surface) !important;
+}
+
+.generaltable th, .generaltable td
+{
+	border-top: none !important;
+}
+
+.section li.activity.hasinfo {
+	border-bottom: 1px solid var(--surface-on-blend) !important;
 }
